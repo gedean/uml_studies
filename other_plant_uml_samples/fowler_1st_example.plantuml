@@ -1,0 +1,25 @@
+@startuml
+
+class Pedido{
+  id: Integer[1]
+  dataRecebimento: Date[0..1]
+  prePago: Boolean[1]
+  valorTotal: Money
+  expandir()
+  encerrar()
+}
+
+note left of Pedido 
+se Pedido.cliente.obterClassedeCrédito for “ruim”, 
+então Pedido.éPré-pago deve ser “Verdadeiro”
+end note
+
+class Cliente{
+  nome[1]
+  endereco[0..1]
+  obterClasseCredito()
+}
+
+Pedido "*" --> "1" Cliente
+
+@enduml

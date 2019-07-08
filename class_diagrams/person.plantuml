@@ -1,0 +1,16 @@
+@startuml
+
+  /' Test Class '/
+  class Person{
+    +id: int
+    +name: string
+    +birth_day: date
+    
+    ' Methods
+    +age()
+    +method_with_params(method_param)
+    +method_with_return(): int
+  }
+
+  Person -* Car: have >
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+
+:Gerente: as Employee
+actor Funcionário
+actor :Cliente: as Person
+
+' With stereotypes
+:Medidor de Radiação: <<Hardware>>
+actor :Sistema\nIntegrado: <<Software>>
+@enduml

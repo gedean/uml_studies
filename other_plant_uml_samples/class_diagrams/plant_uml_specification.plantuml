@@ -1,0 +1,11 @@
+@startuml
+  class Car{
+    +id
+    ~motor_id
+    +start()
+  }
+  Driver - Car : drives >
+  Car *- Wheel : have 4 >
+  Car -- Persons :  < owns 
+
+@enduml

@@ -1,0 +1,21 @@
+@startuml
+  class Animal{
+    +locomover()
+  }
+
+  class Mamifero{
+    -pelos: boolean
+    +mamar()
+  }
+
+  class Ave{
+    -bico
+    +por_ovos()
+  }
+
+  Animal <|-- Mamifero
+  Animal <|-- Ave
+
+  Mamifero <|-- Ornitorrinco
+  Ave <|-- Ornitorrinco
+@enduml
