@@ -1,0 +1,5 @@
+@startuml
+  (Abrir Conta Especial) --> (Abrir Conta Comum)
+  (Conta Corrente) --> (Abrir Conta Comum)
+  
+@enduml
